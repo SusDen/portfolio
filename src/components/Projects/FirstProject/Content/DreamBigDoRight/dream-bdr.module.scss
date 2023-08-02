@@ -1,0 +1,10 @@
+.wrap {
+  display: flex;
+  width: 1920px;
+  height: 820px;
+  padding: 103px 446.135px 154.07px 446px;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--gradient, linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(219, 219, 219, 0.80) 0%, rgba(219, 219, 219, 0.00) 100%), radial-gradient(100% 77.47% at 85.83% 100.00%, #FDAB01 0%, rgba(253, 171, 1, 0.00) 100%), radial-gradient(57.39% 89.64% at 10.36% -0.00%, #DCE8EE 0%, rgba(220, 232, 238, 0.00) 100%), linear-gradient(0deg, #C8C8C8 0%, #C8C8C8 100%), #FFF);
+}

@@ -1,0 +1,34 @@
+.wrap {
+
+  min-height: 50rem;
+  display: flex;
+  justify-content: center;
+
+  .main {
+    margin-top: 25vh;
+
+    .textBlock {
+      margin-right: 20vw;
+
+      .portfolio {
+        span {
+
+          font-family: 'Righteous', cursive;
+          font-weight: 400;
+          color: dodgerblue;
+          font-size: 1.05vw;
+        }
+      }
+
+      .textTitle {
+        padding-top: 10px;
+
+        span {
+          font-family: 'Nunito', serif;
+          font-weight: 800;
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}

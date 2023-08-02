@@ -1,0 +1,126 @@
+@import "../../styles";
+
+.wrap {
+  width: auto;
+  height: 784px;
+  padding: 114px 353px 113.148px 354px;
+
+  .main {
+    width: 1213px;
+    height: 556.852px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+
+  .titleText {
+    color: $text-color;
+    text-align: center;
+    font-family: $text-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+
+    span {
+      color: $primary-color;
+      font-family: $text-font;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+    }
+
+    .subTitleText {
+      margin-top: 12px;
+      color: $primary-color;
+      text-align: center;
+      font-family: $text-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+    }
+  }
+
+  .content {
+    margin-top: 111px;
+    display: flex;
+
+    .contentImage {
+
+      .slider {
+        display: flex;
+        justify-content: center;
+
+        ul {
+          position: absolute;
+          margin-top: 315px;
+          display: inline-flex;
+          align-items: flex-start;
+          list-style: none;
+          gap: 6px;
+
+          li {
+            border-radius: 1px;
+            padding: 1.5px 8px;
+            background: white;
+            opacity: 0.30000001192092896;
+            transition: .5s;
+            cursor: pointer;
+          }
+
+          li:hover {
+            transition: .5s;
+            padding: 1.5px 12px;
+            opacity: 1;
+          }
+
+          li:global(.active) {
+            transition: .5s;
+            padding: 1.5px 12px;
+            opacity: 1;
+            background: $primary-color;
+          }
+        }
+      }
+
+      img {
+        width: 566px;
+        height: 327px;
+        flex-shrink: 0;
+        border-radius: 24px;
+      }
+    }
+
+    .contentCircle {
+      position: absolute;
+      width: 347.529px;
+      height: 361.33px;
+      transform: rotate(-2.105deg);
+      flex-shrink: 0;
+      margin-left: 711px;
+    }
+
+    .contentText {
+      padding-left: 36px;
+      padding-top: 100px;
+      width: 611px;
+      height: 126px;
+
+      flex-shrink: 0;
+      color: #4D4D4D;
+      font-family: $text-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+  }
+
+}

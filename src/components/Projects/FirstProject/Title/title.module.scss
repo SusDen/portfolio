@@ -1,0 +1,86 @@
+@import "../styles";
+
+.title {
+  width: auto;
+  height: 700px;
+
+
+  .titleGradient {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(219, 219, 219, 0.80) 0%, rgba(219, 219, 219, 0.00) 100%), radial-gradient(100% 77.47% at 85.83% 100.00%, #FDAB01 0%, rgba(253, 171, 1, 0.00) 100%), radial-gradient(57.39% 89.64% at 10.36% -0.00%, #DCE8EE 0%, rgba(220, 232, 238, 0.00) 100%), linear-gradient(0deg, #C8C8C8 0%, #C8C8C8 100%), #FFF;
+
+    height: 700px;
+    width: 1920px;
+
+    .titleImage {
+      width: auto;
+      height: 700px;
+      margin-left: 37vw;
+      flex-shrink: 0;
+      background: url('/src/assets/firstProjectTitleCity.png'), no-repeat;
+      mix-blend-mode: overlay;
+    }
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: 238px;
+    margin-left: 19.5vw;
+
+
+    h1 {
+      color: $text-color;
+      font-family: $text-font, sans-serif;
+      font-size: 58px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 65px;
+      letter-spacing: 0.2px;
+
+      span {
+        color: $primary-color;
+        font-family: $text-font, sans-serif;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    .titleButton {
+      margin-top: 45px;
+      display: flex;
+      width: 150px;
+      padding: 8px 0 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      border-radius: 2px;
+      border: 1px solid $primary-color;
+      background: $primary-color;
+      box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+      color: #FFF;
+      text-align: center;
+
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+
+      img {
+        margin-top: -3px;
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
+    }
+
+    .titleButton:hover {
+      transition: .2s;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60rem;
+
+
+  .content {
+    margin-left: 43vw;
+
+    .leftSide {
+      margin-right: 50px;
+
+      img {
+        position: absolute;
+        height: 20vw;
+        border-radius: 10px;
+        right: 49vw;
+
+      }
+
+
+    }
+  }
+
+  .rightSide {
+    width: 32vw;
+
+    .aboutMe {
+      font-family: 'Righteous', cursive;
+      font-weight: 400;
+      color: dodgerblue;
+      font-size: 1.05vw;
+    }
+
+    .bitText {
+      font-family: 'Nunito', serif;
+      font-weight: 800;
+      font-size: 2vw;
+
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      font-size: 2vw;
+    }
+
+    .smallText {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 1vw;
+      color: gray;
+    }
+  }
+}
+
+.circleWrap {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+
+  .circle {
+    position: relative;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+
+    .image {
+      position: absolute;
+      width: 7.5vw;
+      height: 7.5vw;
+      background: url("src/assets/laptop.png");
+      background-size: cover;
+      border-radius: 50%;
+    }
+
+    .imageText {
+      //color: black;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotateText 10s linear infinite;
+      @keyframes rotateText {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      span {
+        font-family: 'Roboto Slab', sans-serif;
+        position: absolute;
+        left: 50%;
+        font-size: 1.15vw;
+        transform-origin: 0 5vw;
+      }
+    }
+  }
+}

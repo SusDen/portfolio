@@ -1,0 +1,85 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+
+  .main {
+    div {
+      padding: 10px;
+    }
+
+    .content {
+      display: flex;
+
+      .textBlock {
+        margin-right: 30px;
+        width: 430px;
+
+        .bigText {
+          font-family: 'Nunito', serif;
+          font-weight: 900;
+          font-size: 50px;
+
+        }
+
+        .smallText {
+          font-family: 'Nunito', serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: gray;
+        }
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+
+      .image {
+        img {
+          height: 300px;
+          border-radius: 50%;
+          border: 4px solid;
+          animation: anim infinite 12s linear;
+          @keyframes anim {
+            0% {
+              border-radius: 50%;
+            }
+
+            25% {
+              border-radius: 43% 57% 49% 51% / 36% 50% 50% 64%
+            }
+            50% {
+              border-radius: 41% 59% 68% 32% / 75% 55% 45% 25%
+            }
+            75% {
+              border-radius: 81% 19% 46% 54% / 42% 61% 39% 58%
+            }
+            100% {
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .skills {
+      display: flex;
+
+      span {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 20px;
+        padding-right: 50px;
+      }
+
+      img {
+        height: 40px;
+        margin-top: -10px;
+        padding-right: 25px;
+      }
+    }
+  }
+}

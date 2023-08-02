@@ -1,0 +1,35 @@
+.wrap {
+  position: fixed;
+  z-index: 10;
+
+  .main {
+    //background: #ffad;
+    width: auto;
+
+    .button {
+      margin-top: 1rem;
+      margin-left: 0.4rem;
+
+
+      a {
+        font-family: 'Nunito', serif;
+        font-weight: 900;
+        font-size: 15px;
+
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        background: inherit;
+        transition: 0.5s;
+        cursor: pointer;
+        user-select: none;
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background: gray;
+      }
+    }
+  }
+}
