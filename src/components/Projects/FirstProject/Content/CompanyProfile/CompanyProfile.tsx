@@ -38,10 +38,12 @@ const CompanyProfile = (): JSX.Element => {
     return (
         <div className={styles.wrap}>
             <div className={styles.main}>
-                <div className={styles.titleText}>
-                    Company Profile<span>.</span>
-                    <div className={styles.subTitleText}>
-                        Short introduction
+                <div className={styles.titleWrap}>
+                    <div className={styles.titleText}>
+                        Company Profile<span>.</span>
+                        <div className={styles.subTitleText}>
+                            Short introduction
+                        </div>
                     </div>
                 </div>
                 <div className={styles.content}>
@@ -50,12 +52,14 @@ const CompanyProfile = (): JSX.Element => {
                     </div>
                     <div className={styles.contentImage}>
                         <div className={styles.slider}>
-                            <ul>
-                                <li className={activeImg == 1 ? 'active' : ''} onClick={() => setActiveImg(1)}></li>
-                                <li className={activeImg == 2 ? 'active' : ''} onClick={() => setActiveImg(2)}></li>
-                                <li className={activeImg == 3 ? 'active' : ''} onClick={() => setActiveImg(3)}></li>
-                                <li className={activeImg == 4 ? 'active' : ''} onClick={() => setActiveImg(4)}></li>
-                            </ul>
+                            <div className={styles.sliderWrapper}>
+                                <ul>
+                                    <li className={activeImg == 1 ? 'active' : ''} onClick={() => setActiveImg(1)}></li>
+                                    <li className={activeImg == 2 ? 'active' : ''} onClick={() => setActiveImg(2)}></li>
+                                    <li className={activeImg == 3 ? 'active' : ''} onClick={() => setActiveImg(3)}></li>
+                                    <li className={activeImg == 4 ? 'active' : ''} onClick={() => setActiveImg(4)}></li>
+                                </ul>
+                            </div>
                         </div>
                         <img src={images[activeImg - 1]} alt=""/>
                     </div>

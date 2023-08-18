@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 10;
 
+
   .main {
     //background: #ffad;
     width: auto;
@@ -9,7 +10,9 @@
     .button {
       margin-top: 1rem;
       margin-left: 0.4rem;
-
+      @media screen and (max-width: 428px) {
+        margin-left: 4rem;
+      }
 
       a {
         font-family: 'Nunito', serif;

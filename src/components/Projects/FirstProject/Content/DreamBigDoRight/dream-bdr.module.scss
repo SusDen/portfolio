@@ -1,10 +1,388 @@
+@import "../../styles";
+
 .wrap {
   display: flex;
-  width: 1920px;
+  width: auto;
   height: 820px;
-  padding: 103px 446.135px 154.07px 446px;
+  @media screen and (max-width: 1024px) {
+    height: 1120px;
+  }
+  @media screen and (max-width: 680px) {
+    height: 1420px;
+  }
   justify-content: center;
   align-items: center;
 
   background: var(--gradient, linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(219, 219, 219, 0.80) 0%, rgba(219, 219, 219, 0.00) 100%), radial-gradient(100% 77.47% at 85.83% 100.00%, #FDAB01 0%, rgba(253, 171, 1, 0.00) 100%), radial-gradient(57.39% 89.64% at 10.36% -0.00%, #DCE8EE 0%, rgba(220, 232, 238, 0.00) 100%), linear-gradient(0deg, #C8C8C8 0%, #C8C8C8 100%), #FFF);
+
+  .main {
+    .titleBlock {
+      display: flex;
+      justify-content: center;
+
+      .titleText {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+
+        .smallText {
+          color: $primary-color;
+          text-align: center;
+          font-family: $text-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 150% */
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
+        }
+
+        .bigText {
+          color: $text-color;
+          text-align: center;
+          font-family: $text-font;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .blocks {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 136px;
+      gap: 70px;
+      @media screen and (max-width: 1024px) {
+        gap: 40px;
+        justify-content: center;
+
+      }
+      @media screen and (max-width: 428px) {
+        justify-content: center;
+      }
+
+      .block1:hover + .blockShadow1 {
+        display: block;
+        animation: .5s reveal-shadow1;
+        @media screen and (max-width: 1024px) {
+          animation: .5s reveal-shadow1_1;
+        }
+        @media screen and (max-width: 920px) {
+          animation: .5s reveal-shadow1_2;
+        }
+        @media screen and (max-width: 680px) {
+          animation: .5s reveal-shadow1_3;
+        }
+        @media screen and (max-width: 428px) {
+          display: none;
+          animation: none;
+        }
+      }
+
+      .block2:hover + .blockShadow2 {
+        animation: .5s reveal-shadow2;
+        display: block;
+        @media screen and (max-width: 1024px) {
+          animation: .5s reveal-shadow2_1;
+        }
+        @media screen and (max-width: 680px) {
+          animation: .5s reveal-shadow2_2;
+        }
+        @media screen and (max-width: 428px) {
+          display: none;
+          animation: none;
+        }
+      }
+
+      .block3:hover + .blockShadow3 {
+        animation: .5s reveal-shadow3;
+        display: block;
+        @media screen and (max-width: 1024px) {
+          animation: .5s reveal-shadow3_1;
+        }
+        @media screen and (max-width: 920px) {
+          animation: .5s reveal-shadow3_2;
+        }
+        @media screen and (max-width: 428px) {
+          display: none;
+          animation: none;
+        }
+      }
+
+      .block {
+        border-radius: 12px;
+        background: #FFF;
+        width: 300px;
+        height: 310px;
+        flex-shrink: 0;
+        z-index: 2;
+        @media screen and (max-width: 1024px) {
+          width: 280px;
+          height: 290px;
+        }
+        @media screen and (max-width: 920px) {
+          margin-left: 40px;
+        }
+        @media screen and (max-width: 680px) {
+          margin-left: 130px;
+        }
+        @media screen and (max-width: 428px) {
+          margin-left: 0;
+        }
+
+        .blockImageContainer {
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+
+          .blockImage {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+        }
+
+        .blockBigText {
+          margin-top: -20px;
+          color: #2E2E2E;
+          text-align: center;
+          font-family: $text-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 171.429% */
+        }
+
+        .blockSmallTextContainer {
+          display: flex;
+          justify-content: center;
+
+          .blockSmallText {
+            width: 243px;
+            margin-top: 24px;
+            color: #676767;
+            text-align: center;
+            font-family: $text-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+
+      }
+
+      .blockShadow1, .blockShadow2, .blockShadow3 {
+        width: 300px;
+        height: 330px;
+        flex-shrink: 0;
+        transform: rotate(-3deg);
+        border-radius: 12px;
+        background: $primary-color;
+        position: absolute;
+        z-index: 1;
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+          width: 280px;
+          height: 310px;
+        }
+      }
+
+      .blockShadow1 {
+        margin-left: 20px;
+        @media screen and (max-width: 1024px) {
+          margin-left: 20px;
+        }
+        @media screen and (max-width: 920px) {
+          margin-left: -300px;
+        }
+        @media screen and (max-width: 680px) {
+          margin-left: 150px;
+        }
+      }
+
+      .blockShadow2 {
+        margin-left: 390px;
+        @media screen and (max-width: 1024px) {
+          margin-left: 420px;
+        }
+        @media screen and (max-width: 680px) {
+          margin-left: 150px;
+          margin-top: 330px;
+        }
+      }
+
+      .blockShadow3 {
+        margin-left: 760px;
+        @media screen and (max-width: 1024px) {
+          margin-left: 660px;
+        }
+        @media screen and (max-width: 920px) {
+          margin-left: 60px;
+          margin-top: 330px;
+        }
+        @media screen and (max-width: 680px) {
+          margin-left: 150px;
+          margin-top: 660px;
+        }
+      }
+
+    }
+  }
+}
+
+@keyframes reveal-shadow1 {
+  from {
+    transform: rotate(-0deg);
+    height: 310px;
+    margin-left: 0;
+    @media screen and (max-width: 1024px) {
+      height: 260px;
+    }
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 330px;
+    margin-left: 20px;
+    @media screen and (max-width: 1024px) {
+      height: 310px;
+    }
+  }
+}
+
+@keyframes reveal-shadow1_1 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 40px;
+
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 60px;
+  }
+}
+
+@keyframes reveal-shadow1_2 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: -320px;
+
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: -300px;
+
+  }
+}
+
+@keyframes reveal-shadow1_3 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 130px;
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 150px;
+
+  }
+}
+
+
+@keyframes reveal-shadow2 {
+  from {
+    transform: rotate(-0deg);
+    height: 310px;
+    margin-left: 370px;
+
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 330px;
+    margin-left: 390px;
+
+  }
+}
+
+@keyframes reveal-shadow2_1 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 400px;
+
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 420px;
+  }
+}
+
+@keyframes reveal-shadow2_2 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 130px;
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 150px;
+  }
+}
+
+@keyframes reveal-shadow3 {
+  from {
+    transform: rotate(-0deg);
+    height: 310px;
+    margin-left: 740px
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 330px;
+    margin-left: 760px;
+  }
+}
+
+@keyframes reveal-shadow3_1 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 640px
+
+
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 660px;
+
+  }
+}
+
+@keyframes reveal-shadow3_2 {
+  from {
+    transform: rotate(-0deg);
+    height: 260px;
+    margin-left: 130px;
+  }
+  to {
+    transform: rotate(-3deg);
+    height: 310px;
+    margin-left: 150px;
+  }
 }

@@ -37,7 +37,7 @@ function Home(): JSX.Element {
             <Navbar theme={theme} toggleTheme={toggleTheme}/>
             <Title/>
             <AboutMe theme={theme}/>
-            <Projects/>
+            <Projects theme={theme}/>
         </div>
     );
 }

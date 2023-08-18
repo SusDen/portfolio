@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./title.module.scss";
 import icon from '/src/assets/icon-wrapper.svg'
+import city from '/src/assets/firstProjectTitleCity.png';
 
 const Title = (): JSX.Element => {
     return (
@@ -17,6 +18,7 @@ const Title = (): JSX.Element => {
             </div>
             <div className={styles.titleGradient}>
                 <div className={styles.titleImage}>
+                    <img src={city} alt=""/>
                 </div>
             </div>
         </div>

@@ -8,7 +8,6 @@
     margin-top: 25vh;
 
     .textBlock {
-      margin-right: 20vw;
 
       .portfolio {
         span {
@@ -30,5 +29,95 @@
         }
       }
     }
+
+    .project {
+      display: flex;
+      height: 300px;
+      margin-top: 30px;
+
+      img {
+        width: auto;
+        height: auto;
+      }
+
+      .projectTextBlock {
+        margin-left: 50px;
+        width: 400px;
+        height: auto;
+
+        .projectText {
+          margin-top: 20px;
+          text-align: center;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+
+          .text {
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: gray;
+          }
+
+          span {
+            font-family: 'Nunito', serif;
+            font-weight: 800;
+            font-size: 25px;
+          }
+
+          span:not(:first-child) {
+            margin: 10px;
+            font-size: 20px;
+          }
+
+        }
+      }
+
+      .projectButton {
+
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+
+        a {
+          font-family: 'Nunito', serif;
+          font-weight: 900;
+          font-size: 20px;
+          padding: 10px;
+          border: 1px solid;
+          border-radius: 10px;
+          transition: 0.5s;
+          cursor: pointer;
+          user-select: none;
+          text-decoration: none;
+          background: transparent;
+          color: #000;
+          margin: 5px;
+
+          &:global(.dark) {
+            color: white;
+
+            img {
+              filter: invert(1);
+            }
+          }
+
+          img {
+            width: 20px;
+            margin-left: 2px;
+          }
+
+          &:hover {
+            background: gray;
+          }
+        }
+      }
+    }
+
+
   }
 }

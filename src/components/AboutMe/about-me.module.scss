@@ -14,7 +14,9 @@
 
       img {
         position: absolute;
-        height: 20vw;
+        height: auto;
+        min-width: 400px;
+        width: 32vw;
         border-radius: 10px;
         right: 49vw;
 
