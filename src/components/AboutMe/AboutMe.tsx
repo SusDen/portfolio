@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./about-me.module.scss";
+import table from '/src/assets/table2.jpg'
 
 interface IProps {
     theme: any;
@@ -16,8 +17,7 @@ const AboutMe = (props: IProps): JSX.Element => {
         <div className={styles.wrap} id="about">
             <div className={styles.content}>
                 <div className={styles.leftSide}>
-                    <img src="src/assets/table2.jpg" alt=""/>
-
+                    <img src={table} alt=""/>
                 </div>
                 <div className={styles.break}></div>
                 <div className={styles.circleWrap}>
