@@ -2,111 +2,164 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 60rem;
-
+  width: auto;
+  height: 1300px;
+  @media screen and (max-width: 1024px) {
+    height: 900px;
+    margin-top: 200px;
+  }
 
   .content {
-    margin-left: 43vw;
-
-    .leftSide {
-      margin-right: 50px;
-
-      img {
-        position: absolute;
-        height: auto;
-        min-width: 400px;
-        width: 32vw;
-        border-radius: 10px;
-        right: 49vw;
-
-      }
-
-
-    }
-  }
-
-  .rightSide {
-    width: 32vw;
-
-    .aboutMe {
-      font-family: 'Righteous', cursive;
-      font-weight: 400;
-      color: dodgerblue;
-      font-size: 1.05vw;
-    }
-
-    .bitText {
-      font-family: 'Nunito', serif;
-      font-weight: 800;
-      font-size: 2vw;
-
-    }
-
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      user-select: none;
-      font-size: 2vw;
-    }
-
-    .smallText {
-      font-family: 'Nunito', sans-serif;
-      font-weight: 400;
-      font-size: 1vw;
-      color: gray;
-    }
-  }
-}
-
-.circleWrap {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-
-  .circle {
-    position: relative;
-    height: 10vw;
-    width: 10vw;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
+    flex-wrap: wrap;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 
-    .image {
-      position: absolute;
-      width: 7.5vw;
-      height: 7.5vw;
-      background: url("src/assets/laptop.png");
-      background-size: cover;
-      border-radius: 50%;
+    .leftSide {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      img {
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+      }
+
     }
 
-    .imageText {
-      //color: black;
+    .break {
+      @media screen and (max-width: 1500px) {
+        width: 100%;
+      }
+    }
+
+    .circleWrap {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
       position: absolute;
-      width: 100%;
-      height: 100%;
-      animation: rotateText 10s linear infinite;
-      @keyframes rotateText {
-        0% {
-          transform: rotate(0deg);
+      @media screen and (max-width: 2560px) {
+        margin-top: 400px;
+      }
+      @media screen and (max-width: 1500px) {
+        position: relative;
+        margin-top: -30px;
+      }
+      @media screen and (max-width: 1050px) {
+        position: relative;
+        margin-top: -30px;
+      }
+
+      .circle {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          position: absolute;
+          height: 112.5px;
+          width: 112.5px;
+          background: url("src/assets/laptop.png");
+          background-size: cover;
+          border-radius: 50%;
         }
-        100% {
-          transform: rotate(360deg);
+
+        .imageText {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          animation: rotateText 10s linear infinite;
+          @keyframes rotateText {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+          span {
+            font-family: 'Roboto Slab', sans-serif;
+            position: absolute;
+            left: 50%;
+            font-size: 1rem;
+            transform-origin: 0 75px;
+          }
         }
       }
 
-      span {
-        font-family: 'Roboto Slab', sans-serif;
-        position: absolute;
-        left: 50%;
-        font-size: 1.15vw;
-        transform-origin: 0 5vw;
+
+    }
+
+    .rightSide {
+      width: auto;
+      min-width: 300px;
+      max-width: 600px;
+      @media screen and (max-width: 2560px) {
+        padding-left: 100px;
+      }
+      @media screen and (max-width: 1500px) {
+        padding-left: 0;
+        padding-top: 10px;
+      }
+      @media screen and (max-width: 1024px) {
+        width: auto;
+      }
+
+      .aboutMe {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        color: dodgerblue;
+        font-size: 1.5rem;
+        @media screen and (max-width: 1024px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .bitText {
+        font-family: 'Nunito', serif;
+        font-weight: 800;
+        font-size: 1.7rem;
+        @media screen and (max-width: 1024px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        user-select: none;
+        font-size: 1.7rem;
+        @media screen and (max-width: 1024px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      .smallText {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: gray;
+        @media screen and (max-width: 1024px) {
+          font-size: 1rem;
+        }
       }
     }
   }
 }
+
+

@@ -22,7 +22,7 @@ const Projects = (props: IProps): JSX.Element => {
                     </div>
                     <br/>
                     <div className={styles.project}>
-                        <img src={firstProject} alt=""/>
+                        <img className={styles.image} src={firstProject} alt=""/>
                         <div className={styles.projectTextBlock}>
                             <div className={styles.projectText}>
                                 <span>Financial Service</span>

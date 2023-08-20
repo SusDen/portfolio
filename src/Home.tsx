@@ -1,9 +1,10 @@
 import "./app.scss";
-import Navbar from "./components/Navbar/Navbar";
 import Title from "./components/Title/Title";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 import {useState} from "react";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function Home(): JSX.Element {
     const [theme, setTheme] = useState("light");
@@ -38,6 +39,7 @@ function Home(): JSX.Element {
             <Title/>
             <AboutMe theme={theme}/>
             <Projects theme={theme}/>
+            <Footer/>
         </div>
     );
 }

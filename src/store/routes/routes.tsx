@@ -1,7 +1,9 @@
 import {IRoute} from '../interfaces/IRoute.js';
 import React from 'react';
 import Home from "../../Home";
-import FirstProject from "../../components/Projects/FirstProject/FirstProject";
+import FirstProjectContainer from "../../components/Projects/FirstProject/FirstProjectContainer";
+import Loader from "../../components/Loader/Loader";
+
 
 export const routes: IRoute[] = [
     {
@@ -11,7 +13,11 @@ export const routes: IRoute[] = [
     },
     {
         name: 'first',
-        path: '/firstProject',
-        element: <FirstProject/>,
+        path: 'firstProject',
+        element: <FirstProjectContainer/>
+    }, {
+        name: 'first',
+        path: 'loader',
+        element: <Loader/>
     },
 ];

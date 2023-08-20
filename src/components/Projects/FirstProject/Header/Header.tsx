@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from "./header.module.scss";
 import logo from '/src/assets/firstProjectLogo.svg'
 import icon from '/src/assets/icon-wrapper.svg'
-import Menu from "../../Menu/Menu";
+import Menu from "../../../Menu/Menu";
 
 const Header = (): JSX.Element => {
     const [menuActive, setMenuActive] = useState(false)
@@ -31,7 +31,8 @@ const Header = (): JSX.Element => {
                     </li>
                 </ul>
             </div>
-            <Menu item={items} header={'Simple burger'} active={menuActive} setActive={setMenuActive}/>
+            <Menu item={items} header={'Simple burger'} active={menuActive} setActive={setMenuActive}
+                  styles={{background: "white", color: "orange"}}/>
         </header>
     );
 };

@@ -49,10 +49,60 @@
     float: right;
     padding-right: 1.5rem;
 
+    .burger {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: none;
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+      margin-top: 15px;
+      cursor: pointer;
+      background: transparent;
+
+      span {
+        position: absolute;
+        top: 10px;
+        width: 24px;
+        height: 4px;
+        border-radius: 100px;
+        background: black;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 24px;
+        background: black;
+        height: 4px;
+        border-radius: 100px;
+
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 24px;
+        background: black;
+        height: 4px;
+        border-radius: 100px;
+
+      }
+
+      .burgerItem {
+        display: none;
+      }
+    }
+
     li {
       display: inline-block;
       padding: 0.85rem 25px 25px 25px;
-
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
 
