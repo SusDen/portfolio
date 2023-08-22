@@ -6,15 +6,15 @@ import CustomerService from "./CustomerService/CustomerService";
 import GetIn from "./GetInTouch/GetIn";
 
 const Content = () => {
-    return (
-        <div>
-            <CompanyProfile/>
-            <DreamBDR/>
-            <OurPartners/>
-            <CustomerService/>
-            <GetIn/>
-        </div>
-    );
+  return (
+    <div>
+      <CompanyProfile/>
+      <DreamBDR/>
+      <OurPartners/>
+      <CustomerService/>
+      <GetIn/>
+    </div>
+  );
 };
 
 export default Content;

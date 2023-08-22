@@ -1,16 +1,16 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 export interface AuthState {
-    text: string;
+  text: string;
 }
 
 const initialState: AuthState = {
-    text: "Hello World!"
+  text: "Hello World!"
 };
 export const appSlice = createSlice({
-    name: 'counter',
-    initialState,
-    reducers: {}
+  name: 'counter',
+  initialState,
+  reducers: {}
 })
 
 // Action creators are generated for each case reducer function

@@ -1,15 +1,15 @@
 import "./app.scss";
 
 interface IProps {
-    children: JSX.Element;
+  children: JSX.Element;
 }
 
 function HomeContainer({children}: IProps): JSX.Element {
-    return (
-        <div>
-            {children}
-        </div>
-    )
+  return (
+    <div>
+      {children}
+    </div>
+  )
 }
 
 

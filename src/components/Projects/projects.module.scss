@@ -1,138 +1,138 @@
 .wrap {
-  
+
+ display: flex;
+ justify-content: center;
+ height: 1200px;
+ width: 100%;
+
+ .main {
   display: flex;
   justify-content: center;
-  height: 1000px;
+  margin-top: 250px;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  .main {
+
+  .textBlock {
+
+   .portfolio {
+    span {
+
+     font-family: 'Righteous', cursive;
+     font-weight: 400;
+     color: dodgerblue;
+     font-size: 1.05rem;
+    }
+   }
+
+   .textTitle {
+    padding-top: 10px;
+
+    span {
+     font-family: 'Nunito', serif;
+     font-weight: 800;
+     font-size: 1.5rem;
+    }
+   }
+  }
+
+  .project {
+   display: flex;
+   justify-content: center;
+   height: 300px;
+   margin-top: 30px;
+   flex-wrap: wrap;
+
+   .image {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+   }
+
+   .projectTextBlock {
+    margin-left: 50px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    @media screen and (max-width: 1350px) {
+     margin-left: 0;
+    }
+
+    .projectText {
+     margin-top: 20px;
+     text-align: center;
+     font-family: 'Nunito', sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+
+     .text {
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: gray;
+     }
+
+     span {
+      font-family: 'Nunito', serif;
+      font-weight: 800;
+      font-size: 25px;
+     }
+
+     span:not(:first-child) {
+      margin: 10px;
+      font-size: 20px;
+     }
+
+    }
+   }
+
+   .projectButton {
+
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    margin-top: 250px;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    align-items: center;
+    height: auto;
 
 
-    .textBlock {
+    a {
+     font-family: 'Nunito', serif;
+     font-weight: 900;
+     font-size: 20px;
+     padding: 10px;
+     border: 1px solid;
+     border-radius: 10px;
+     transition: 0.5s;
+     cursor: pointer;
+     user-select: none;
+     text-decoration: none;
+     background: transparent;
+     color: #000;
+     margin: 5px;
 
-      .portfolio {
-        span {
+     &:global(.dark) {
+      color: white;
 
-          font-family: 'Righteous', cursive;
-          font-weight: 400;
-          color: dodgerblue;
-          font-size: 1.05rem;
-        }
+      img {
+       filter: invert(1);
       }
+     }
 
-      .textTitle {
-        padding-top: 10px;
+     img {
+      width: 20px;
+      margin-left: 2px;
+     }
 
-        span {
-          font-family: 'Nunito', serif;
-          font-weight: 800;
-          font-size: 1.5rem;
-        }
-      }
+     &:hover {
+      background: gray;
+     }
     }
-
-    .project {
-      display: flex;
-      justify-content: center;
-      height: 300px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-
-      .image {
-        width: 100%;
-        max-width: 600px;
-        min-width: 300px;
-        height: auto;
-      }
-
-      .projectTextBlock {
-        margin-left: 50px;
-        width: auto;
-        max-width: 400px;
-        height: auto;
-        @media screen and (max-width: 1350px) {
-          margin-left: 0;
-        }
-
-        .projectText {
-          margin-top: 20px;
-          text-align: center;
-          font-family: 'Nunito', sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-
-          .text {
-            text-align: center;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: gray;
-          }
-
-          span {
-            font-family: 'Nunito', serif;
-            font-weight: 800;
-            font-size: 25px;
-          }
-
-          span:not(:first-child) {
-            margin: 10px;
-            font-size: 20px;
-          }
-
-        }
-      }
-
-      .projectButton {
-
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-
-
-        a {
-          font-family: 'Nunito', serif;
-          font-weight: 900;
-          font-size: 20px;
-          padding: 10px;
-          border: 1px solid;
-          border-radius: 10px;
-          transition: 0.5s;
-          cursor: pointer;
-          user-select: none;
-          text-decoration: none;
-          background: transparent;
-          color: #000;
-          margin: 5px;
-
-          &:global(.dark) {
-            color: white;
-
-            img {
-              filter: invert(1);
-            }
-          }
-
-          img {
-            width: 20px;
-            margin-left: 2px;
-          }
-
-          &:hover {
-            background: gray;
-          }
-        }
-      }
-    }
-
-
+   }
   }
+
+
+ }
 }

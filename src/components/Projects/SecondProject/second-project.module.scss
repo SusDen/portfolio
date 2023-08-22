@@ -1,0 +1,82 @@
+.wrap {
+ padding: 0;
+ margin: 0;
+ min-width: 100vw;
+ min-height: 100vh;
+ background: white;
+
+ button {
+  margin-left: 50%;
+  margin-top: 10%;
+ }
+
+
+ .mainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  min-height: 100vh;
+
+  .content {
+   .score {
+    width: 100vw;
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+
+    span {
+     font-size: 20px;
+     text-align: center;
+     color: gray;
+     font-family: Nunito, sans-serif;
+    }
+   }
+
+   .main {
+    line-height: 0;
+    text-align: center;
+
+
+    .board {
+     display: inline-block;
+     height: auto;
+     width: auto;
+
+
+     .row {
+      display: inline-block;
+      outline: 1px solid black;
+
+
+      .cell {
+       height: 50px;
+       width: 50px;
+       outline: 1px solid black;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 30px;
+       @media screen and (max-width: 500px) {
+        width: 25px;
+        height: 25px;
+       }
+      }
+
+      .snakeCell {
+       background: greenyellow;
+       z-index: 2;
+      }
+
+      .foodCell {
+       background: red;
+       z-index: 1;
+      }
+     }
+    }
+   }
+  }
+ }
+}

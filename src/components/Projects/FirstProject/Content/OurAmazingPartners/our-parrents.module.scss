@@ -1,74 +1,74 @@
 @import "../../styles";
 
 .wrap {
-  display: flex;
-  height: 700px;
-  justify-content: center;
-  align-items: center;
-  background: #F2F2F2;
-  width: auto;
+ display: flex;
+ height: 700px;
+ justify-content: center;
+ align-items: center;
+ background: #F2F2F2;
+ width: auto;
 
-  .main {
-    .titleBlock {
-      text-align: center;
+ .main {
+  .titleBlock {
+   text-align: center;
 
-      .titleBigText {
-        color: $text-color;
-        font-family: $text-font;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.2px;
-        text-transform: capitalize;
+   .titleBigText {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
 
-        span {
-          color: $primary-color;
-          font-size: 40px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          letter-spacing: 0.2px;
-          text-transform: capitalize;
-        }
-      }
-
-      .titleSmallText {
-        margin-top: 12px;
-        color: $primary-color;
-        text-align: center;
-        font-family: $text-font;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px; /* 150% */
-        letter-spacing: 0.2px;
-        text-transform: capitalize;
-      }
+    span {
+     color: $primary-color;
+     font-size: 40px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: 0.2px;
+     text-transform: capitalize;
     }
+   }
 
-    .contentBlock {
-      margin-top: 40px;
-      display: flex;
-      gap: 80px;
-      justify-content: center;
-      align-items: center;
-      @media screen and (max-width: 1024px) {
-        margin-top: 20px;
-        gap: 40px;
-
-      }
-
-      img {
-        width: 180px;
-        @media screen and (max-width: 1024px) {
-          width: 160px;
-        }
-        @media screen and (max-width: 560px) {
-          width: 120px;
-        }
-      }
-    }
-
+   .titleSmallText {
+    margin-top: 12px;
+    color: $primary-color;
+    text-align: center;
+    font-family: $text-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+   }
   }
+
+  .contentBlock {
+   margin-top: 40px;
+   display: flex;
+   gap: 80px;
+   justify-content: center;
+   align-items: center;
+   @media screen and (max-width: 1024px) {
+    margin-top: 20px;
+    gap: 40px;
+
+   }
+
+   img {
+    width: 180px;
+    @media screen and (max-width: 1024px) {
+     width: 160px;
+    }
+    @media screen and (max-width: 560px) {
+     width: 120px;
+    }
+   }
+  }
+
+ }
 }

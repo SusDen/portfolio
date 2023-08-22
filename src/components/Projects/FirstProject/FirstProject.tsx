@@ -8,15 +8,15 @@ import Footer from "./Footer/Footer";
 
 
 const FirstProject = (): JSX.Element => {
-    return (
-        <div className={styles.wrap}>
-            <BackToHomeHeader/>
-            <Header/>
-            <Title/>
-            <Content/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className={styles.wrap}>
+      <BackToHomeHeader/>
+      <Header/>
+      <Title/>
+      <Content/>
+      <Footer/>
+    </div>
+  );
 };
 
 export default FirstProject;
