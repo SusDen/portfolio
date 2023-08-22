@@ -55,9 +55,10 @@ const SecondProject = () => {
   const [direction, setDirection] = useState(Direction.RIGHT);
 
   useEffect(() => {
-    window.addEventListener('keydown', e => {
-      handleKeyDown(e)
-    })
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
   }, [])
 
   useInterval(() => {

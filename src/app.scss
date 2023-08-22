@@ -47,7 +47,10 @@ i {
  border-bottom-left-radius: 10px;
  border-bottom-right-radius: 10px;
  animation: falling 15s linear infinite;
- //box-shadow: 0 25px 30px 2px #fff;
+ @media screen and (max-width: 1020px) {
+  animation: falling2 15s linear infinite;
+
+ }
 }
 
 @keyframes falling {
@@ -59,19 +62,25 @@ i {
  }
 }
 
+@keyframes falling2 {
+ 0% {
+  transform: translateY(-200px);
+ }
+ 100% {
+  transform: translateY(3450px);
+ }
+}
+
 i:nth-child(3n+1) {
  background: linear-gradient(transparent, #0ff);;
- //box-shadow: 0 25px 30px 2px #0ff;
 }
 
 i:nth-child(3n+2) {
  background: linear-gradient(transparent, #0f0);
- //box-shadow: 0 25px 30px 2px #0f0;
 }
 
 i:nth-child(3n+3) {
  background: linear-gradient(transparent, #f00);
- //box-shadow: 0 25px 30px 2px #f00;
 }
 
 

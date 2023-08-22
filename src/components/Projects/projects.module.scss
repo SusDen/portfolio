@@ -2,63 +2,108 @@
 
  display: flex;
  justify-content: center;
+ align-items: center;
  height: 1200px;
  width: 100%;
+ @media screen and (max-width: 1020px) {
+  height: 2000px;
+ }
 
  .main {
-  display: flex;
   justify-content: center;
   margin-top: 250px;
-  width: 100%;
+  width: auto;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 
 
-  .textBlock {
-
-   .portfolio {
-    span {
-
-     font-family: 'Righteous', cursive;
-     font-weight: 400;
-     color: dodgerblue;
-     font-size: 1.05rem;
+  .textBlockWrap {
+   .textBlock {
+    .portfolio {
+     span {
+      font-family: 'Righteous', cursive;
+      font-weight: 400;
+      color: dodgerblue;
+      font-size: 1.05rem;
+     }
     }
-   }
 
-   .textTitle {
-    padding-top: 10px;
+    .textTitle {
+     padding-top: 10px;
 
-    span {
-     font-family: 'Nunito', serif;
-     font-weight: 800;
-     font-size: 1.5rem;
+     span {
+      font-family: 'Nunito', serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+     }
     }
    }
   }
+ }
+
+ .projects {
+  display: block;
+  height: auto;
+
+  .break {
+   width: 100%;
+  }
+
 
   .project {
    display: flex;
    justify-content: center;
-   height: 300px;
+   height: 400px;
    margin-top: 30px;
-   flex-wrap: wrap;
+   @media screen and (max-width: 1020px) {
+    flex-wrap: wrap;
+    height: 800px;
+    margin-top: 10px;
+   }
+
+   &:nth-child(2n) {
+    .image {
+     order: 2;
+    }
+
+    .projectTextBlock {
+     order: 1;
+    }
+
+    @media screen and (max-width: 1020px) {
+     .image {
+      order: 1;
+     }
+
+     .projectTextBlock {
+      order: 2;
+     }
+    }
+   }
 
    .image {
+    order: 1;
     width: 100%;
     max-width: 600px;
     min-width: 300px;
     height: auto;
+    max-height: 300px;
+    min-height: 150px;
+
    }
 
    .projectTextBlock {
+    order: 2;
     margin-left: 50px;
     width: auto;
     max-width: 400px;
     height: auto;
+    align-self: flex-start;
     @media screen and (max-width: 1350px) {
      margin-left: 0;
     }
+
 
     .projectText {
      margin-top: 20px;
@@ -132,7 +177,5 @@
     }
    }
   }
-
-
  }
 }
