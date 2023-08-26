@@ -77,6 +77,39 @@
      }
     }
    }
+
+   .buttons {
+    display: none;
+    @media screen and (max-width: 1024px) {
+     display: block;
+    }
+    text-align: center;
+    margin-top: 10px;
+    font-size: 36px;
+
+    .upper {
+     display: flex;
+     justify-content: center;
+
+     div {
+      border: 1px solid black;
+      background: lightgray;
+      padding: 10px;
+     }
+    }
+
+    .lower {
+
+     display: flex;
+     justify-content: center;
+
+     div {
+      border: 1px solid black;
+      padding: 10px;
+      background: lightgray;
+     }
+    }
+   }
   }
  }
 }

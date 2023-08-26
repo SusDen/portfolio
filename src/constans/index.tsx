@@ -39,3 +39,32 @@ export const useInterval = (callback: any, delay: number) => {
     }
   }, [delay]);
 }
+export const Direction = {
+  UP: 'UP',
+  RIGHT: 'RIGHT',
+  DOWN: 'DOWN',
+  LEFT: 'LEFT'
+}
+export const getDirectionFromKey = (key: string) => {
+
+  switch (key) {
+    case 'w':
+    case 'ц':
+    case 'ArrowUp':
+      return Direction.UP
+    case 'a':
+    case 'ф':
+    case 'ArrowLeft':
+      return Direction.LEFT
+    case 'd':
+    case 'в':
+    case 'ArrowRight':
+      return Direction.RIGHT
+    case 's':
+    case 'ы':
+    case 'ArrowDown':
+      return Direction.DOWN
+    default:
+      return ''
+  }
+};

@@ -15,6 +15,7 @@ const ScrollToTop = () => {
 }
 // TODO при увелечении проектов перенести в отдельный компонент снизу
 const Projects = (props: IProps): JSX.Element => {
+
   return (
     <div className={styles.wrap} id="projects">
       <div className={styles.main}>
@@ -30,7 +31,7 @@ const Projects = (props: IProps): JSX.Element => {
           </div>
         </div>
         <div className={styles.projects}>
-          {Block(
+          {block(
             firstProject,
             "https://github.com/SusDen/portfolio/tree/master/src/components/Projects/FirstProject",
             "/firstProject",
@@ -39,7 +40,7 @@ const Projects = (props: IProps): JSX.Element => {
             'Фінансові сервiс – це економічні послуги, що надаються фінансовою індустрією, яка разом охоплюють ' +
             'широкий спектр фірм сфери послуг, які надають фінансові управління.'
           )}
-          {Block(
+          {block(
             secondProject,
             "https://github.com/SusDen/portfolio/tree/master/src/components/Projects/SecondProject",
             "/secondProject",
@@ -55,7 +56,7 @@ const Projects = (props: IProps): JSX.Element => {
   );
 };
 
-const Block = (image: string, href: string, link: string, theme: string, title: string, text: string): JSX.Element => {
+const block = (image: string, href: string, link: string, theme: string, title: string, text: string): JSX.Element => {
   return (
     <div className={styles.project}>
       <img className={styles.image} src={image} alt=""/>

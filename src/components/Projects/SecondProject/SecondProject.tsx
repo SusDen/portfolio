@@ -1,15 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import BackToHomeHeader from "../BackToHomeHeader/BackToHomeHeader";
 import styles from './second-project.module.scss'
-import {randomIntFromInterval, useInterval} from "../../../constans";
+import {Direction, getDirectionFromKey, randomIntFromInterval, useInterval} from "../../../constans";
 
 const boardSize: number = 10
-const Direction = {
-  UP: 'UP',
-  RIGHT: 'RIGHT',
-  DOWN: 'DOWN',
-  LEFT: 'LEFT'
-}
+
 
 class Position {
   value: { cell: number, col: number, row: number };
@@ -180,6 +175,16 @@ const SecondProject = () => {
               ))}
             </div>
           </div>
+          <div className={styles.buttons}>
+            <div className={styles.upper}>
+              <div onClick={() => setDirection(Direction.UP)}>↑</div>
+            </div>
+            <div className={styles.lower}>
+              <div onClick={() => setDirection(Direction.LEFT)}>←</div>
+              <div onClick={() => setDirection(Direction.DOWN)}>↓</div>
+              <div onClick={() => setDirection(Direction.RIGHT)}>→</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -199,29 +204,6 @@ const createBoard = (boardSize: number) => {
   return board
 };
 
-const getDirectionFromKey = (key: string) => {
-
-  switch (key) {
-    case 'w':
-    case 'ц':
-    case 'ArrowUp':
-      return Direction.UP
-    case 'a':
-    case 'ф':
-    case 'ArrowLeft':
-      return Direction.LEFT
-    case 'd':
-    case 'в':
-    case 'ArrowRight':
-      return Direction.RIGHT
-    case 's':
-    case 'ы':
-    case 'ArrowDown':
-      return Direction.DOWN
-    default:
-      return ''
-  }
-};
 
 const getReverseDirection = (direction: string) => {
   switch (direction) {
