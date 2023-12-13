@@ -25,7 +25,7 @@ const Projects = (props: IProps): JSX.Element => {
               <span>PORTFOLIO</span>
             </div>
             <div className={styles.textTitle}>
-              <span>Кожен проект унікальна частина розробки🧩</span>
+              <span>Each project is a unique part of development🧩</span>
             </div>
             <br/>
           </div>
@@ -37,8 +37,8 @@ const Projects = (props: IProps): JSX.Element => {
             "/firstProject",
             props.theme,
             'Financial Service',
-            'Фінансові сервiс – це економічні послуги, що надаються фінансовою індустрією, яка разом охоплюють ' +
-            'широкий спектр фірм сфери послуг, які надають фінансові управління.'
+            'Financial services -  economic services provided by the financial industry, which together includes ' +
+            'a wide range of firms in the field of services that provide financial management.'
           )}
           {block(
             secondProject,
@@ -46,9 +46,9 @@ const Projects = (props: IProps): JSX.Element => {
             "/secondProject",
             props.theme,
             'Snake game',
-            'Гравець управляє змійкою за допомогою кнопок напрямку - вгору, вниз, ліворуч, праворуч. Повзаючи змійка ' +
-            'має збирати їжу, за яку нараховуються окуляри. Мета гри – набрати якнайбільше очок. Гра закінчується, ' +
-            'якщо змійка врізається в стіну або в себе'
+            'The player controls the snake using the direction buttons - up, down, left, right. While crawling, the' +
+            ' snake must collect food, for which points are awarded. The goal of the game is to score as many points as' +
+            ' possible. The game ends if the snake crashes into the wall or into itself'
           )}
         </div>
       </div>

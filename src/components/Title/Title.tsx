@@ -5,8 +5,10 @@ import htmlLogo from '/src/assets/html-5.png';
 import cssLogo from '/src/assets/css-3.png';
 import jsLogo from '/src/assets/js.png';
 import reactLogo from '/src/assets/react.png';
-import scssLogo from '/src/assets/sass.png';
+import sassLogo from '/src/assets/sass.png';
 import tsLogo from '/src/assets/typescript.png';
+import nextLogo from '/src/assets/next-js.png';
+import vueLogo from '/src/assets/vuejs.png';
 
 const Title = (): JSX.Element => {
   return (
@@ -18,8 +20,7 @@ const Title = (): JSX.Element => {
             <br/>
             <br/>
             <span className={styles.smallText}>
-              Привіт, я Суський Денис, зацiкавлений Front-end React Developer,
-              живу в Україні, Київ
+            Hello, I'm Suskyi Denys, an interested Front-end React Developer, I live in Ukraine, Kyiv
             </span>
             <a target="_blank" href="https://goo.gl/maps/qT6BhbdVx4FYXdkL7">
               {" "}
@@ -32,12 +33,14 @@ const Title = (): JSX.Element => {
         </div>
         <div className={styles.skills}>
           <span>Tech Stack |</span>
-          <img src={htmlLogo} alt=""/>
-          <img src={cssLogo} alt=""/>
-          <img src={jsLogo} alt=""/>
-          <img src={reactLogo} alt=""/>
-          <img src={scssLogo} alt=""/>
-          <img src={tsLogo} alt=""/>
+          <img src={htmlLogo} alt="html"/>
+          <img src={cssLogo} alt="css"/>
+          <img src={jsLogo} alt="js"/>
+          <img src={reactLogo} alt="react"/>
+          <img src={sassLogo} alt="sass"/>
+          <img src={tsLogo} alt="ts"/>
+          <img src={nextLogo} alt="next"/>
+          <img src={vueLogo} alt="vue"/>
         </div>
       </div>
     </div>

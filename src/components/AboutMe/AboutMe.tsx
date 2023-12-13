@@ -33,7 +33,7 @@ const AboutMe = (props: IProps): JSX.Element => {
           <span className={styles.aboutMe}>ABOUT ME</span>
           <br/>
           <span className={styles.bitText}>
-            Відданий Front-end Developer, який живе в Україні, Київ
+            Dedicated Front-end Developer living in Ukraine, Kyiv
           </span>
           <a target="_blank" href="https://goo.gl/maps/qT6BhbdVx4FYXdkL7">
             {" "}
@@ -42,14 +42,11 @@ const AboutMe = (props: IProps): JSX.Element => {
           <br/>
           <br/>
           <span className={styles.smallText}>
-            Як Junior Front-end Developer я володію вражаючим арсеналом навичок
-            у HTML, CSS, JavaScript, React і SCSS. Я чудово розробляю та
-            підтримую адаптивні веб-сайти, які забезпечують безперебійну роботу
-            користувачів. Мій досвід полягає в створенні динамічних, привабливих
-            інтерфейсів шляхом написання чистого й оптимізованого коду та
-            використання передових інструментів і технологій розробки. Я також
-            командний гравець, який процвітає, співпрацюючи з міжфункціональними
-            командами для створення видатних веб-додатків.
+            As a Junior Front-end Developer, I have an impressive arsenal of skills in HTML, CSS, JavaScript, React and
+            Next. I excel at designing and maintaining responsive websites that provide a smooth user experience. My
+            expertise is in creating dynamic, attractive interfaces by writing clean and optimized code and using
+            advanced development tools and technologies. I'm also a team player who thrives collaborating with
+            cross-functional teams to build outstanding web applications.
           </span>
         </div>
 

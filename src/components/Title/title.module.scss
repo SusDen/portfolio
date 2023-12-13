@@ -1,110 +1,116 @@
 .wrap {
- display: flex;
- justify-content: center;
- align-items: center;
- height: auto;
- padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 300px;
 
- .main {
-  width: auto;
-
-
-  div {
-   padding: 10px;
-  }
-
-  .content {
-   display: flex;
-   justify-content: center;
-   @media screen and (max-width: 1024px) {
-    flex-wrap: wrap;
-
-   }
-
-   .textBlock {
-    margin-right: 30px;
-    @media screen and (max-width: 1024px) {
-     margin-right: 0;
-    }
+  .main {
     width: auto;
-    max-width: 430px;
 
-    .bigText {
-     font-family: 'Nunito', serif;
-     font-weight: 900;
-     font-size: 50px;
-     @media screen and (max-width: 1024px) {
-      font-size: 3rem;
-     }
-     @media screen and (max-width: 655px) {
-      font-size: 1.5rem;
-     }
+
+    div {
+      padding: 10px;
     }
 
-    .smallText {
-     font-family: 'Nunito', serif;
-     font-weight: 400;
-     font-size: 18px;
-     color: gray;
-    }
+    .content {
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
 
-    a {
-     text-decoration: none;
-     cursor: pointer;
-     user-select: none;
-    }
-   }
-
-   .image {
-    img {
-     height: 300px;
-     @media screen and (max-width: 1024px) {
-      height: 200px;
-     }
-     border-radius: 50%;
-     border: 4px solid;
-     animation: anim infinite 12s linear;
-     @keyframes anim {
-      0% {
-       border-radius: 50%;
       }
 
-      25% {
-       border-radius: 43% 57% 49% 51% / 36% 50% 50% 64%
+      .textBlock {
+        margin-right: 30px;
+        @media screen and (max-width: 1024px) {
+          margin-right: 0;
+        }
+        width: auto;
+        max-width: 430px;
+
+        .bigText {
+          font-family: 'Nunito', serif;
+          font-weight: 900;
+          font-size: 50px;
+          @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 655px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        .smallText {
+          font-family: 'Nunito', serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: gray;
+        }
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          user-select: none;
+        }
       }
-      50% {
-       border-radius: 41% 59% 68% 32% / 75% 55% 45% 25%
+
+      .image {
+        img {
+          height: 300px;
+          @media screen and (max-width: 1024px) {
+            height: 200px;
+          }
+          border-radius: 50%;
+          border: 4px solid;
+          animation: anim infinite 12s linear;
+          @keyframes anim {
+            0% {
+              border-radius: 50%;
+            }
+
+            25% {
+              border-radius: 43% 57% 49% 51% / 36% 50% 50% 64%
+            }
+            50% {
+              border-radius: 41% 59% 68% 32% / 75% 55% 45% 25%
+            }
+            75% {
+              border-radius: 81% 19% 46% 54% / 42% 61% 39% 58%
+            }
+            100% {
+              border-radius: 50%;
+            }
+          }
+        }
       }
-      75% {
-       border-radius: 81% 19% 46% 54% / 42% 61% 39% 58%
-      }
-      100% {
-       border-radius: 50%;
-      }
-     }
     }
-   }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+
+      span {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 20px;
+        padding-right: 50px;
+      }
+
+      img {
+        height: 40px;
+        padding-right: 25px;
+
+      }
+
+      span, img {
+        @media screen and (max-width: 737px) {
+          margin-top: 15px;
+        }
+      }
+    }
   }
-
-  .skills {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   @media screen and (max-width: 630px) {
-    justify-content: center;
-   }
-
-   span {
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 20px;
-    padding-right: 50px;
-   }
-
-   img {
-    height: 40px;
-    padding-right: 25px;
-   }
-  }
- }
 }
